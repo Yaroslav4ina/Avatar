@@ -1,10 +1,16 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  line-height: normal;
+}
+
 a {
-    text-decoration: none;
-    font-style: normal;
+  text-decoration: none;
+  font-style: normal;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
 
 h1,
@@ -15,23 +21,328 @@ h5,
 h6,
 ul,
 p {
-    margin: 0;
-    padding-left: 0px;
+  margin: 0;
+  padding-left: 0px;
 }
 
 img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
+.container {
+  width: 1062px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .visually-hidden {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow:}
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/*  */
+.header {
+  background-image: linear-gradient(
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url(../images/heder.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  padding-top: 39px;
+  padding-bottom: 39px;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-links {
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin-right: 38px;
+}
+
+.header-button {
+  color: #26c6ea;
+  text-align: justify;
+  font-family: "HeadlandOne";
+  font-size: 20px;
+  font-weight: 400;
+  width: 141px;
+  height: 41.694px;
+  flex-shrink: 0;
+  border-radius: 45px 0px;
+  border: 3px solid #26c7ea;
+  background: #0b0e66;
+  padding: 9px 36px 7.69px 37px;
+}
+
+.header-links:hover,
+.header-links:focus {
+  color: #94cfff;
+}
+
+.header-button:hover,
+.header-button:focus {
+  color: #0b0e66;
+  background-color: #26c6ea;
+  border-color: #0b0e66;
+}
+
+/* hero */
+.hero {
+  background-image: url(../images/hero.png);
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  padding-top: 180px;
+  padding-bottom: 179px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero-text {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  width: 298px;
+  margin-bottom: 42px;
+}
+
+.hero-img {
+  width: 152px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.hero-btn {
+  color: #26c7ea;
+  text-align: center;
+  font-family: "HeadlandOne";
+  font-size: 24px;
+  font-weight: 400;
+  width: 260px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 45px 0px;
+  border: 3px solid #26c7ea;
+  background-color: #0b0e66;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: #0b0e66;
+  background-color: #26c6ea;
+  border-color: #0b0e66;
+}
+
+/* cytat */
+.cytat {
+  padding-top: 75px;
+  padding-bottom: 10px;
+}
+
+.cytat-text-1 {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0a3853;
+  font-size: 36px;
+  margin-bottom: 4px;
+}
+
+.cytat-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0a3853;
+  text-align: justify;
+  font-size: 36px;
+  margin-bottom: 16px;
+}
+
+.cytat-imie {
+  color: #000;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.cytat-img {
+  width: 400px;
+  height: 120px;
+  margin-left: 310px;
+}
+
+/* trailer */
+.trailer {
+  background-image: url(../images/triller.png);
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  padding-top: 330px;
+  padding-bottom: 331px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trailer-btn {
+  font-weight: 400;
+  font-size: 24px;
+  text-align: justify;
+  color: #26c7ea;
+  background-color: #0b0e66;
+  border: 3px solid #26c7ea;
+  border-radius: 45px 0;
+  width: 260px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  padding: 25px 18px 25px 17px;
+}
+
+.trailer-btn:hover,
+.trailer-btn:focus {
+  color: #0b0e66;
+  background-color: #26c6ea;
+  border-color: #0b0e66;
+}
+
+/* laugage */
+.laugage {
+  background-image: url(../images/dickschinory.png);
+  background-size: 1440px;
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  padding-top: 58px;
+  padding-bottom: 57px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.laugage-h2 {
+  color: #141414;
+  text-align: justify;
+  font-family: "HeadlandOne";
+  font-size: 32px;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 45px;
+}
+
+.laugage-list > .item {
+  width: 320px;
+  height: 240px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.laugage-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  flex-basis: calc((100% - 36px) / 3);
+}
+
+.england {
+  color: #141414;
+  text-align: center;
+  font-family: "HeadlandOne";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 36px;
+}
+
+.language-img {
+  width: 152px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-top: 40px;
+  margin-left: 84px;
+}
+
+.avatar {
+  color: #000;
+  text-align: justify;
+  font-family: "HeadlandOne";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/* footer */
+footer {
+  background-image: linear-gradient(
+      rgba(43, 74, 97, 0.87),
+      rgba(43, 74, 97, 0.87)
+    ),
+    url(../images/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 183px;
+  height: 70px;
+  flex-shrink: 0;
+  margin-left: 40px;
+  margin-right: 80px;
+}
+
+.footer-list {
+  gap: 16px;
+}
+
+.footer-email {
+  color: #fff;
+  text-align: justify;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 80px;
+}
